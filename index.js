@@ -182,7 +182,6 @@ function searchMovie(){
         let result = movies.filter((movie)=>{
             return movie.name.toUpperCase().includes(movieName.toUpperCase())
         })
-        // console.log(result)
         displayMovies(result)
     }
     else{
@@ -197,7 +196,6 @@ function displayMovies(data){
         
     `
     for (let i=0;i<data.length;i++){
-        // console.log(movies[i].name)
         htmlString = htmlString + `
             <div class="movie">
                 <div class="overlay">
